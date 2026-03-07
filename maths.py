@@ -23,11 +23,12 @@ def division():
 value = 0
 x = int(input("input a number?"))
 value += x
-y = input("what operation do u want Eg : (+,-, *, /)")
+
 
 #while loop to carry out operations until the user is finished
 finished = 'no'
 while finished == 'no':
+    y = input("what operation do u want Eg : (+,-, *, /)")
     #if loops to see which operations need to be done
     if y == '+':
         addition()
