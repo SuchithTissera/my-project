@@ -1,20 +1,18 @@
+#Library needed 
 import math
 
-
+#The mathamatical operations that can be done 
 def addition(value):
     number = float(input("Enter the next number: "))
     return value + number
-
 
 def subtraction(value):
     number = float(input("Enter the next number: "))
     return value - number
 
-
 def multiplication(value):
     number = float(input("Enter the next number: "))
     return value * number
-
 
 def division(value):
     number = float(input("Enter the next number: "))
@@ -23,11 +21,9 @@ def division(value):
         return value
     return value / number
 
-
 def power(value):
     number = float(input("Enter the exponent: "))
     return value ** number
-
 
 def modulus(value):
     number = float(input("Enter the next number: "))
@@ -43,15 +39,17 @@ def square_root(value):
         return value
     return math.sqrt(value)
 
-
+#Opening to the calculator 
 print("Simple Calculator")
 print("Available operations: +  -  *  /  ^  %  sqrt  reset  exit")
 
 value = float(input("Enter the starting number: "))
 
+#Loop until the user is done with the operations 
 while True:
     operation = input("Choose an operation: ").lower()
 
+    #Loops with error handling 
     if operation == "+":
         value = addition(value)
     elif operation == "-":
@@ -73,7 +71,7 @@ while True:
     else:
         print("Invalid operation. Please try again.")
         continue
-
+    #sub total adding 
     print("Current value:", value)
-
+#final total adding 
 print("Final value:", value)
